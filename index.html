@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Elibrary</title>
+    <link rel="icon" href="logo.jpg" >
+    <!-- links  -->
+     <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>E library Management System</h1>
+        </div>
+        <div class="wrapper">
+            
+
+  
+            <p>A digital initiative by the institute facilitating Faculty, Staff, Students, and Researchers to access and process academic resources, research materials, e-books, and international publications all in one centralized platform
+                </p>
+        </div>
+        <div class="navi">
+            <ul>
+                <li><a href="Admin/alogin.php">Admin</a></li>
+                <li><a href="user/ulogin.php">User</a></li>
+                <li><a href="New/new.php">Registraion</a></li>
+               
+    </ul>
+           
+        </div>
+      
+            </div>
+    </div>
+    <footer>
+        <p>&copy; Rights Reserverd  By Balu Prakash Santhakumar</p>
+    </footer>
+    <script>
+        document.addEventListener("click", function () { // Check if a loader already exists if (document.querySelector(".dots-container")) return;
+
+// Create loader container
+const loader = document.createElement("section");
+loader.className = "dots-container";
+
+// Create dots
+for (let i = 0; i < 5; i++) {
+    const dot = document.createElement("div");
+    dot.className = "dot";
+    loader.appendChild(dot);
+}
+
+// Append loader to body
+document.body.appendChild(loader);
+
+// Remove loader after some time (e.g., 3 seconds)
+setTimeout(() => {
+    loader.remove();
+}, 3000);
+
+});
+    </script>
+</body>
+</html>
